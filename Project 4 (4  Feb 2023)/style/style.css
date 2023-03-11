@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Red Rose", cursive;
+}
+
+/* Navbar */
+.mainnav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 650px;
+    margin-top: 20px;
+}
+
+.mainleftnav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navsec ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navsec ul li {
+    list-style: none;
+}
+
+.navsec ul li a {
+    text-decoration: none;
+    font-weight: 600;;
+}
+
+nav button {
+    padding: 9px 25px;
+    font-weight: 900px;
+    color: white;
+    font-size: 15px;
+    background-color: rgb(73, 73, 186);
+    border: none;
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.mainleft {
+    padding-left: 15px;
+}
+
+.mainleft h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 60px;
+    color: rgb(6, 6, 119);
+    margin-bottom: 20px;
+}
+
+.mainleft h1 span {
+    color: rgb(73, 73, 186)
+}
+
+.mainleft p {
+    color: rgb(5, 48, 128);
+    margin-bottom: 40px;
+}
+
+.mainleft button {
+    padding: 9px 22px;
+    font-weight: 900px;
+    color: white;
+    font-size: 17px;
+    background-color: rgb(73, 73, 186);
+    border: none;
+    border-radius: 5px;
+}
+
+main img {
+    height: 500px;
+    width: 700px;
+}
