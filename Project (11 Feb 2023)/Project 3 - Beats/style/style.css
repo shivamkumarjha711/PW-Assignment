@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #0f0f10;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 1px 1px 1px;
+}
+.menubar{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.menubar ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.menubar ul li{
+    list-style: none;
+}
+.menubar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.menubar ul li a:hover{
+    background-color: #ffffff;
+    color: black;
+    padding: 8px 10px;
+    border-radius:20px;
+}
+.menubar button{
+    background-color: #1e1e21;
+    padding: 8px 30px;
+    border: 2px solid gray;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.mainsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 80px;
+}
+.mainsection_img img{
+    width: 250px;
+    margin-top: -200px;
+}
+.mainsection_other{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.mainsection_other img{
+    width: 320px;
+    margin-left: 60px;
+
+}
+.mainsection_other h1{
+    font-size: 50px;
+    line-height: 2.2em;
+}
+
+.mainsection_other p{
+    margin: 25px 0;
+    font-weight: normal;
+}
+
+.mainsection_other button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 23px;
+    background-color: #1e1e21;
+    padding: 8px 5px;
+    border: 2px solid gray;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 80%;
+}
+.mainsection_other button img{
+    width: 20px;
+    background-color: #1e1e21;
+    
+}
+.mainsection_other button p{
+    background-color: #1e1e21;
+    font-weight: normal;  
+    margin: 0;
+}
+.mainsection_other button span{
+    background-color: #1e1e21;
+    
+}
+.CompanyLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.specssection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.specs{
+    margin-bottom: 50px;
+}
+.specs img{
+    width: 200px;
+}
+.specsother{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+.specscontentpart{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.Connection{
+    margin-left: 50px;
+}
+.Microphone{
+    margin-left: 50px;
+}
+.specimgpart img{
+    width: 300px;
+}
+.casecontentpart p{
+    margin-bottom: 25px;
+}
+.casesection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 100px;
+    
+}
+.caseother{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+}
+.casecontentpart button{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #1e1e21;
+    padding: 8px 30px;
+    border: 2px solid gray;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.casecontentpart button img{
+    background-color: #1e1e21;
+}
+.casecontentpart button p{
+    background-color: #1e1e21;
+    margin: 0;
+
+}
+.musicsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.musicsectiondiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #1e1e21;
+    height: 350px;
+    width: 950px;
+    border-radius: 12px;
+}
+.musiccontentpart{
+    background-color: #1e1e21;
+}
+.musiccontentpart h2{
+    background-color: #1e1e21;
+    margin-bottom: 17px;
+}
+.musiccontentpart p{
+    background-color: #1e1e21;
+}
+.musiccontentpart button{
+    background-color: #1e1e21;
+}
+.musicimgpart {
+    background-color: #1e1e21;
+}
+.musicimgpart img{
+    background-color: #1e1e21;
+}
+.musiccontentpart button{
+    background-color: #1e1e21;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 25px;
+    background-color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.musiccontentpart button p{
+    background-color: black;
+}
+.stylesectionimgpart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.stylesectioncontentpart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 120px;
+    margin-bottom: 130px;
+}
+.stylesectioncontentpart2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 130px;
+}
+.stylesectioncontentpart3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 346px;
+    margin-bottom: 100px;
+
+}
+.styleimg img{
+    width: 150px;
+    background-color: transparent;
+    margin-top: -100px;
+
+}
+.styleimg{
+    background-color: transparent;
+}
+.style{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e21;
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    gap: 30px;
+    cursor: pointer;
+}
+.stylecontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #1e1e21;
+}
+.stylecontent img{
+    margin-top: 12px;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+.stylecontent p, .stylecontent span{
+    background-color: transparent;
+    
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.footerproducts h4 a{
+    text-decoration: none;
+}
+.footerproducts h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footersupport h4 a{
+    text-decoration: none;
+}
+.footersupport h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footersupport ul li{
+    list-style: none;
+    line-height: 1.6em;
+}
+.footersupport ul li a{
+    text-decoration: none;
+}
+.footerproducts ul li{
+    list-style: none;
+    line-height: 1.6em;
+}
+.footerproducts ul li a{
+    text-decoration: none;
+}
+.footersm1{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 7px 16px;
+    background-color: #1e1e21;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.footersm1 input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.footersm1_1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 7px 25px;
+    background-color: black;
+    border-radius: 8px;
+}
+.footersm2{
+    display: flex;
+    gap: 30px;
+}
+.footerarrow{
+    margin-right: -40px;
+}

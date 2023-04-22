@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 550px;
+    margin-top: 25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+nav ul a:hover {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    gap: 18px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #20bc7e;
+}
+
+p {
+    font-weight: 600;
+    text-align: center;
+    color: rgb(109, 107, 107);
+}
+
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+    width: 160px;
+    background-color: #efefef;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(45, 44, 44);
+}
+
+.items h1 {
+    font-size: 21px;
+    font-weight: 900;
+}
+
+.items p {
+    color: rgb(19, 18, 18);
+}

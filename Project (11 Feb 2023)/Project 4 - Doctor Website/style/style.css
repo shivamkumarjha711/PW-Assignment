@@ -1,0 +1,127 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+body {
+    background-color: #efefef;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 500px;
+    margin-top: 25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+nav ul a:hover {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.leftmain {
+    width: 50%;
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.leftmain h1 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.leftmain p {
+    font-weight: 500;color: #6e6969;
+    margin-top: 15px;
+}
+
+.stethoscope {
+    position: relative;
+    bottom: 320px;
+    left: 20%;
+    height: 500px;
+}
+
+.leftmain button {
+    position: absolute;
+    right: 65%;
+    top: 40%;
+    padding: 10px 30px;
+    width: fit-content;
+    background-color: #20bc7e;
+    border: none;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+
+.bottomAngle {
+    position: absolute;
+    top: 40%;
+}
+
+.mouse {
+    position: absolute;
+    top: 45%;
+    left: 73%;
+}
+
+.rightmain {
+    width: 30%
+}
+
+.doctor {
+    position: relative;
+    left: 20%;
+    top: 60%;
+    height: 640px;
+    width: 450px;
+}
+
+.greenBox {
+    position: absolute;
+    left: 69%;
+    top: 25%;
+    height: 500px;
+    width: 500px;
+    z-index: -1;
+}
+
+.yellowBox {
+    position: absolute;
+    left: 73%;
+    top: 25%;
+    height: 500px;
+    width: 500px;
+    z-index: -2;
+}
