@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event by keypress</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 175px;
+            background-color: blueviolet;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 25px;
+            border-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Please press ony key &otimes;</p>
+    </div>
+
+    <script>
+        document.body.addEventListener("keypress", function() {
+            alert("You just press key")
+        })
+    </script>
+</body>
+</html>
