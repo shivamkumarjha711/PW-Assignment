@@ -1,0 +1,35 @@
+<!-- 24. Text Highlighting -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24. Text Highlighting</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus modi qui labore, magnam, veniam alias quibusdam quos in velit optio reprehenderit cumque, sunt vel aspernatur. Qui, maiores ipsam. Exercitationem quisquam eligendi maiores corrupti officiis velit accusamus, dolorum atque est quam cum odio facere accusantium minus adipisci. Nihil asperiores pariatur aliquam consequuntur ab voluptas, accusantium aliquid facere omnis quod eaque! Quia asperiores quae ex quos! Voluptates molestias assumenda eum, similique autem quos, ad magnam rem adipisci voluptatem inventore ipsum cumque explicabo maiores numquam et iure optio hic, necessitatibus nam asperiores repudiandae doloribus eius. Assumenda ducimus distinctio excepturi libero dicta, amet totam natus quia accusantium repellendus architecto, quis minus id. Mollitia corporis iste nihil omnis. Asperiores deleniti molestias ullam perspiciatis possimus quibusdam minus reiciendis tempore debitis, quasi laborum optio nesciunt facere. Ipsum eligendi, laboriosam facere aliquam maxime labore perspiciatis amet, nam ab sapiente sequi ipsa incidunt tenetur nesciunt! Magni soluta distinctio voluptate dignissimos dolorem exercitationem perferendis atque recusandae repellendus blanditiis saepe ipsum delectus laboriosam eveniet vero ex, illum rem ab animi amet labore placeat ipsa rerum laudantium! Blanditiis totam nisi dolore nobis alias earum pariatur, magni laudantium asperiores repudiandae? Sapiente cum molestias perferendis modi accusamus reiciendis quibusdam facere eos delectus ipsum in dolore ad minima, fugiat impedit odit! Distinctio blanditiis dolorem minima optio quibusdam dicta. Ab laboriosam vero velit tenetur ad, reprehenderit dolor aliquid voluptatem perferendis nihil consectetur beatae exercitationem neque veniam ipsa aut facere blanditiis deleniti labore assumenda! Minima in fugiat delectus cupiditate, iure voluptatibus eum, quidem error nemo minus assumenda. Dolor odit at dolores dolore molestiae, cupiditate voluptatum quasi! Vitae soluta accusamus placeat suscipit officiis ratione quaerat at eius cupiditate eum debitis architecto nostrum vero beatae quos quisquam, sed eos voluptatum quam minima nam adipisci possimus. Libero, nobis neque aut omnis ipsum a architecto ratione alias commodi temporibus, fuga similique.</p>
+
+    <script>
+        const paragraph = document.querySelector('p');
+
+        const words = paragraph.textContent.split(' ')
+
+        for (let i = 0; i < words.length; i++) {
+            const word = words[i];
+            
+            if (word.length > 8) {
+                const span = document.createElement("span")
+
+                span.textContent = word;
+
+                span.style.backgroundColor = "yellow"
+
+                words[i] = span.outerHTML
+            }
+        }
+        paragraph.innerHTML = words.join(" ")
+    </script>
+</body>
+</html>

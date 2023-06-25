@@ -1,0 +1,38 @@
+<!-- 18) Change Text on Button click -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text on Button click</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">The most affordable learning platform</h1>
+    <button id="changebtn">Change By click</button>
+
+    <script>
+        const heading = document.getElementById("heading")
+        const changebtn = document.getElementById("changebtn")
+
+        changebtn.addEventListener("click", () => {
+            if (heading.innerText === "The most affordable learning platform") {
+                heading.innerText = "PW Skills"
+            } else {
+                heading.innerText = "The most affordable learning platform"
+            }
+        })
+    </script>
+</body>
+</html>
+

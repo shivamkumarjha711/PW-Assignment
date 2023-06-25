@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll Progress Bar</title>
+  <style>
+    body {
+      height: 200vh;
+    }
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: blue;
+      transition: width 0.3s;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <!-- Your page content goes here -->
+
+  <script>
+    window.addEventListener('scroll', function() {
+  // Calculate the scroll progress
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const progress = (scrollTop / scrollHeight) * 100;
+
+  // Update the width of the progress bar
+  const progressBar = document.getElementById('progress-bar');
+  progressBar.style.width = progress + '%';
+});
+
+  </script>
+</body>
+</html>

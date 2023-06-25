@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add List Items</title>
+</head>
+<body>
+  <ul id="list"></ul>
+  <button id="addButton">Add Item</button>
+
+  <script>
+    // Pre-existing array of list items
+var listItemArray = [
+  'Introduction',
+  'Basic Concepts',
+  'Advanced Topics',
+  'Project Work',
+  'Conclusion'
+];
+
+var currentIndex = 0; // Track the current index of the list item array
+
+// Function to add a new list item
+function addListItem() {
+  var list = document.getElementById('list');
+  var addButton = document.getElementById('addButton');
+
+  if (currentIndex < listItemArray.length) {
+    var listItem = document.createElement('li');
+    listItem.textContent = listItemArray[currentIndex];
+    list.appendChild(listItem);
+    currentIndex++;
+  } else {
+    addButton.disabled = true;
+    addButton.textContent = 'All items added';
+  }
+}
+
+// Event listener for button click
+var addButton = document.getElementById('addButton');
+addButton.addEventListener('click', addListItem);
+
+  </script>
+</body>
+</html>
